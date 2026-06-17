@@ -7,7 +7,7 @@ function InfoBlock({ title, content }) {
             <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                 {title}
             </Typography>
-            <Typography variant="body1" component="div">
+            <Typography variant="body1" sx={{ fontSize: '20px' }} component="div">
                 {content}
             </Typography>
         </Box>
