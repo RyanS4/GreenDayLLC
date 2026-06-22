@@ -8,6 +8,7 @@ import {
 
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import Home from '../Pages/Home';
 
 export default function NavBar() {
 
@@ -25,6 +26,7 @@ export default function NavBar() {
                         component="img"
                         src={logo}
                         alt="Green Day Lawn Service Logo"
+                        onClick={() => handleNavClick("/")}
                         sx={{
                             height: 50,
                             width: 50,
