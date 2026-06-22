@@ -9,7 +9,7 @@ function LawnPrograms() {
         <Box sx={{ flexGrow: 1 }}>
             <NavBar />
             <PageHeader title="Lawn Programs" />
-            <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a 7 step lawn care program to best maintain your lawn throughout the different stages of the year</Typography>
+            <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a 7 step lawn care program to best maintain your lawn throughout the year</Typography>
             <hr />
             <Box sx={{display: 'flex', width: '100%',}}>
                 <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
