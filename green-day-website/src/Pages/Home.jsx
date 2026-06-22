@@ -33,9 +33,7 @@ function Home() {
             <InfoBlock title="Why Choose Us?" content="DON’T PAY A BIG COMPANY FOR LITTLE SERVICE!  Before you sign up for another year of increasing program costs and decreasing customer service, give us a call for a free estimate and see the Green Day difference!" />
             <br />
             <Box sx={{ margin: 2}} >
-                {// same line zelle image and payment notice
-                }
-                <img src={zelle} alt="Zelle" style={{ width: '20%', marginRight: '20px', display: 'inline-block', verticalAlign: 'middle' }} />
+                <img src={zelle} alt="Zelle" style={{ width: '150px', height: 'auto', marginRight: '20px', display: 'inline-block', verticalAlign: 'middle' }} />
                 <Typography variant="h4" component="div" sx={{ color: '#6534D1', fontWeight: 'bold', display: 'inline-block', verticalAlign: 'middle' }}> Payment Notice:</Typography>
                 <Typography variant="body1" component="div" gutterBottom sx={{ fontSize: '24px' }}>We now offer Zelle as a payment option. You can access Zelle through your bank or credit union's mobile app or online banking. We would also ask that any customers currently paying via credit card to consider switching to Zelle. Credit card payments cost you extra money (processing fees) and us time to process the payment. We thank you for your business! Please send Zelle payments to <strong>john@greendayllc.net</strong></Typography>
             </Box>
