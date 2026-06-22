@@ -8,7 +8,6 @@ import {
 
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import Home from '../Pages/Home';
 
 export default function NavBar() {
 
