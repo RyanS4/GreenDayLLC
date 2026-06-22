@@ -3,6 +3,7 @@ import { Typography, Box, Card } from "@mui/material";
 import  PageHeader  from "../components/PageHeader";
 import NavBar  from "../components/NavBar";
 import InfoBlock from "../components/InfoBlock";
+import backflow from '../assets/backflow.png';
 
 function Services() {
 	return (
@@ -79,7 +80,8 @@ function Services() {
 						<Typography variant="body1" component="div">
 							<strong>All documentation forwarded to Local Water Authority</strong>
 						</Typography>
-                    </Card>
+                            <img src={backflow} alt="Backflow Testing" style={{ width: '50%', marginTop: '15px', borderRadius: '5px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+                        </Card>
                 </Box>
             </Box>
         </Box>
