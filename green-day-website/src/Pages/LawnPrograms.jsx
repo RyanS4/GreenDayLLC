@@ -10,9 +10,10 @@ function LawnPrograms() {
             <NavBar />
             <PageHeader title="Lawn Programs" />
             <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a 7 step lawn care program to best maintain your lawn throughout the different stages of the year</Typography>
+            <hr />
             <Box sx={{display: 'flex', width: '100%',}}>
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 1: Early Spring Application (Late February – March)
                         </Typography>
@@ -21,8 +22,8 @@ function LawnPrograms() {
                         </Typography>
                     </Card>
                 </Box>
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 2: Late Spring Application (April – Mid May)
                         </Typography>
@@ -33,8 +34,8 @@ function LawnPrograms() {
                 </Box>
             </Box>
                 <Box sx={{ display: 'flex', width: '100%',}}>
-                    <Box sx={{flex: 1, p: 2}}>
-                         <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                    <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                         <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 3: Early Summer Application (Mid May – June)
                         </Typography>
@@ -43,8 +44,8 @@ function LawnPrograms() {
                         </Typography>
                     </Card>
                     </Box>
-                    <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                    <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 4: Late Summer Application (July – August)
                         </Typography>
@@ -55,8 +56,8 @@ function LawnPrograms() {
                 </Box>
             </Box>
             <Box sx={{ display: 'flex', width: '100%',}}>  
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 5: Early Fall Application (September – Mid October)
                         </Typography>
@@ -65,8 +66,8 @@ function LawnPrograms() {
                         </Typography>
                     </Card>
                 </Box>
-                <Box sx={{ flex: 1, p: 2}}>  
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{ flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>  
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Step 6: Late Fall Application (Mid October – Mid November)
                         </Typography>
@@ -77,16 +78,25 @@ function LawnPrograms() {
                 </Box>
             </Box>
             <Box sx={{ display: 'flex', width: '100%', alighnSelf: 'left', p: 2}}>
-                <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
-                    <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
-                        Step 7: Winter Application (Mid November – December)
-                    </Typography>
-                    <Typography variant="body1" component="div">
-                        Heavy rate of balanced fertilizer to “winterize” the lawn and set up for quick recovery in the following spring. Spot weed control.
-                    </Typography>
-                </Card>
+                <Box sx={{flex: 1, p: 2, justifyContent: 'center', display: 'flex'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                        <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
+                            Step 7: Winter Application (Mid November – December)
+                        </Typography>
+                        <Typography variant="body1" component="div">
+                            Heavy rate of balanced fertilizer to “winterize” the lawn and set up for quick recovery in the following spring. Spot weed control.
+                        </Typography>
+                    </Card>
+                </Box>
             </Box>
-        <InfoBlock sx={{ display: 'flex', width: '100%', padding: 2 }} title="Also Available:" content="5 Step Weed & Fertilization Program for Bermuda  and Zoysia Lawns" />
+            <Box sx= {{width: '100%', alignSelf: 'center', p: 2, justifyContent: 'center'}}>
+                <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
+                    Also Available
+                </Typography>
+                <Typography variant="body1" component="div" sx={{ justifyContent: 'center', display: 'flex', fontSize: '20px' }}> 
+                    5 step weed & fertilization program for bermuda and zoysia lawns
+                </Typography>
+            </Box>
         </Box>
     );
 }

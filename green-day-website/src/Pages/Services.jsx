@@ -4,6 +4,7 @@ import  PageHeader  from "../components/PageHeader";
 import NavBar  from "../components/NavBar";
 import InfoBlock from "../components/InfoBlock";
 import backflow from '../assets/backflow.png';
+import corearation from '../assets/coreaeration.jpg';
 
 function Services() {
 	return (
@@ -11,19 +12,21 @@ function Services() {
             <NavBar />
             <PageHeader title="Services" />
             <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a few additional services which complement our lawn care programs</Typography>
+            <hr />
             <Box sx={{display: 'flex', width: '100%',}}>
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Core Aeration and Seeding (Late February – March)
                         </Typography>
                         <Typography variant="body1" component="div">
                             Aeration can provide the necessary boost to a marginal lawn and a rejuvenation to others. As nature breaks up the cores, the soil will filter into the turf and support the microbial decomposition of the undisturbed thatch. Air and water entering the coring holes will also enhance the decomposition of the thatch while promoting deeper root growth.
                         </Typography>
+                        <img src={corearation} alt="Core Aeration and Seeding" style={{ width: '50%', marginTop: '15px', borderRadius: '5px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
                     </Card>
                 </Box>
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                            Turf Disease Control
                         </Typography>
@@ -34,8 +37,8 @@ function Services() {
                 </Box>
             </Box>
                 <Box sx={{ display: 'flex', width: '100%',}}>
-                    <Box sx={{flex: 1, p: 2}}>
-                         <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                    <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                         <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                            Lawn Renovations
                         </Typography>
@@ -44,8 +47,8 @@ function Services() {
                         </Typography>
                     </Card>
                     </Box>
-                    <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                    <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
 							Pest Control
                         </Typography>
@@ -56,8 +59,8 @@ function Services() {
                 </Box>
             </Box>
             <Box sx={{ display: 'flex', width: '100%',}}>  
-                <Box sx={{flex: 1, p: 2}}>
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             Soil Testing
                         </Typography>
@@ -66,8 +69,8 @@ function Services() {
 						</Typography>
 					</Card>
                 </Box>
-                <Box sx={{ flex: 1, p: 2}}>  
-                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
+                <Box sx={{ flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>  
+                    <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B' }}>
                             <strong>NEW SERVICE: </strong> Backflow Repair and Testing
                         </Typography>

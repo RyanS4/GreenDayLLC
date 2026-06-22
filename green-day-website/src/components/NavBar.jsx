@@ -39,10 +39,10 @@ export default function NavBar() {
                         Green Day Lawn Service
                     </Typography>
                 </Box>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 3 }} onClick={() => handleNavClick("/")}>Home</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 3 }} onClick={() => handleNavClick("/lawn-programs")}>Lawn Programs</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 3 }} onClick={() => handleNavClick("/services")}>Services</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 3 }} onClick={() => handleNavClick("/contact")}>Contact</Button>
+                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/")}>Home</Button>
+                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/lawn-programs")}>Lawn Programs</Button>
+                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/services")}>Services</Button>
+                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/contact")}>Contact</Button>
             </Toolbar>
         </AppBar>
     );

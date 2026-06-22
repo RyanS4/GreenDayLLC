@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 
 export default function PageHeader({ title }) {
     return (
-        <Typography variant="h2" component="h1" align="center" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography variant="h2" component="h1" align="center" gutterBottom sx={{ marginTop: 4, fontWeight: 'bold' }}>
             {title}
         </Typography>
     )
