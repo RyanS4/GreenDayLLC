@@ -91,7 +91,7 @@ function LawnPrograms() {
             </Box>
             <Box sx= {{width: '100%', alignSelf: 'center', p: 2, justifyContent: 'center'}}>
                 <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
-                    Also Available
+                    Also Available:
                 </Typography>
                 <Typography variant="body1" component="div" align='center' sx={{ justifyContent: 'center', display: 'flex', fontSize: '20px' }}> 
                     5 step weed & fertilization program for bermuda and zoysia lawns
