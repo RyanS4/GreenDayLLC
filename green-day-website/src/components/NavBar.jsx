@@ -8,14 +8,13 @@ import {
 
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import { useMediaQuery } from 'react-responsive';
 
 export default function NavBar() {
 
     const navigate = useNavigate();
 
     function handleNavClick(page) {
-        navigate(page);
+    navigate(page);
     }
 
     return (

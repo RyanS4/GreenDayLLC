@@ -5,10 +5,8 @@ import InfoBlock from '../components/InfoBlock';
 import { React } from 'react';
 import home from '../assets/home.jpg';
 import zelle from '../assets/zelle.png';
-import { useMediaQuery } from 'react-responsive';
 
 function Home() {
-        
     return (
         <Box sx={{ flexGrow: 1 }}>
             <NavBar />
