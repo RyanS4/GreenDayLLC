@@ -19,8 +19,8 @@ export default function NavBar() {
 
     return (
         <AppBar position="static" sx={{ backgroundColor: "#06402B" }}>
-            <Toolbar sx={{ px: { xs: 1.5, sm: 2.5 } }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+            <Toolbar sx={{ px: { xs: 1.5, sm: 2.5 }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, width: { xs: '100%', sm: 'auto' } }}>
                     <Box
                         component="img"
                         src={logo}
@@ -36,15 +36,37 @@ export default function NavBar() {
                             ml: 0.5
                         }}
                     />
-                    <Typography variant="h6" component="div">
+                    <Typography variant="h6" component="div" sx={styles.navTitle}>
                         Green Day Lawn Service
                     </Typography>
                 </Box>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/")}>Home</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/lawn-programs")}>Lawn Programs</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/services")}>Services</Button>
-                <Button variant="outlined" color="inherit" sx={{ marginLeft: 4  }} onClick={() => handleNavClick("/contact")}>Contact</Button>
+                <Button variant="outlined" color="inherit" sx={styles.navButton} onClick={() => handleNavClick("/")}>Home</Button>
+                <Button variant="outlined" color="inherit" sx={styles.navButton} onClick={() => handleNavClick("/lawn-programs")}>Lawn Programs</Button>
+                <Button variant="outlined" color="inherit" sx={styles.navButton} onClick={() => handleNavClick("/services")}>Services</Button>
+                <Button variant="outlined" color="inherit" sx={styles.navButton} onClick={() => handleNavClick("/contact")}>Contact</Button>
             </Toolbar>
         </AppBar>
     );
+}
+
+const styles = {
+    navButton: {
+        marginLeft: {
+            xs: 2,
+            sm: 4, 
+        },
+        fontSize: {
+            xs: '10px',
+            sm: '12px',
+            md: '14px',
+            lg: 'inherit'
+        },
+    },
+    navTitle: {
+        fontSize: {
+            xs: '14px',
+            sm: '20px',
+            md: '28px',
+        }
+    }
 }

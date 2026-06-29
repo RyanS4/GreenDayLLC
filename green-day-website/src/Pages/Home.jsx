@@ -22,7 +22,18 @@ function Home() {
                 marginTop: 2
             }}
             >
-            <Typography variant="h2" component="h1" align="center" gutterBottom sx={{ marginTop: 4, color: '#FFFFFF', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' }}>
+            <Typography variant="h2" component="h1" align="center" gutterBottom sx={{
+                fontSize: {
+                    xs: '24px',
+                    sm: '36px',
+                    md: '48px',
+                    lg: '64px'
+                },
+                marginTop: 4, 
+                color: '#FFFFFF', 
+                fontWeight: 'bold', 
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' 
+                }}>
                 Welcome to Green Day Lawn Service!
             </Typography>
             </Box>
