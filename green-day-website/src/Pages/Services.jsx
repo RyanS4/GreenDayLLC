@@ -17,7 +17,7 @@ function Services() {
             <PageHeader title="Services" />
             <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a few additional services which complement our lawn care programs</Typography>
             <hr />
-            <Box sx={{display: 'flex', width: '100%',}}>
+            <Box sx={style.cardContainer}>
                 <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                     <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -41,7 +41,7 @@ function Services() {
                     </Card>
                 </Box>
             </Box>
-                <Box sx={{ display: 'flex', width: '100%',}}>
+                <Box sx={style.cardContainer}>
                     <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                          <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -65,7 +65,7 @@ function Services() {
                     </Card>
                 </Box>
             </Box>
-            <Box sx={{ display: 'flex', width: '100%',}}>  
+            <Box sx={style.cardContainer}>  
                 <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                     <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -97,6 +97,17 @@ function Services() {
             </Box>
         </Box>
 	);
+}
+
+const style = {
+    cardContainer: {
+        display: 'flex',
+        flexDirection: {
+            xs: 'column',
+            md: 'row'
+        },
+        width: '100%'
+    }
 }
 
 export default Services;
