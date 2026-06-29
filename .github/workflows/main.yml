@@ -1,1 +1,43 @@
+name: Deploy to cPanel
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: green-day-website/package-lock.json
+
+      - name: Install dependencies
+        working-directory: green-day-website
+        run: npm ci
+
+      - name: Build Vite app
+        working-directory: green-day-website
+        run: npm run build
+
+      - name: Deploy dist to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CPANEL_FTP_SERVER }}
+          username: ${{ secrets.CPANEL_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          server-dir: public_html/
+          local-dir: green-day-website/dist/
+          exclude: |
+            **/.well-known/**
+            **/.well-known/**/*
