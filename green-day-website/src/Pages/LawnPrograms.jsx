@@ -11,7 +11,7 @@ function LawnPrograms() {
             <PageHeader title="Lawn Programs" />
             <Typography sx={{ padding: 2, fontSize: '25px' }} align="center">We offer a 7 step lawn care program to best maintain your lawn throughout the year</Typography>
             <hr />
-            <Box sx={{display: 'flex', width: '100%',}}>
+            <Box sx={style.cardContainer}>
                 <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                     <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -33,7 +33,7 @@ function LawnPrograms() {
                     </Card>
                 </Box>
             </Box>
-                <Box sx={{ display: 'flex', width: '100%',}}>
+                <Box sx={style.cardContainer}>
                     <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                          <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -55,7 +55,7 @@ function LawnPrograms() {
                     </Card>
                 </Box>
             </Box>
-            <Box sx={{ display: 'flex', width: '100%',}}>  
+            <Box sx={style.cardContainer}>  
                 <Box sx={{flex: 1, p: 2, display: 'flex', flexDirection: 'column'}}>
                     <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9', display: 'flex', flexDirection: 'column', height: '100%' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -77,7 +77,7 @@ function LawnPrograms() {
                     </Card>
                 </Box>
             </Box>
-            <Box sx={{ display: 'flex', width: '100%', alighnSelf: 'left', p: 2}}>
+            <Box sx={style.cardContainer}>
                 <Box sx={{flex: 1, p: 2, justifyContent: 'center', display: 'flex'}}>
                     <Card sx={{ margin: 2, padding: 2, backgroundColor: '#E8F5E9' }}>
                         <Typography variant="h5" component="div" gutterBottom sx={{ fontWeight: 'bold', color : '#06402B', justifyContent: 'center', display: 'flex' }}>
@@ -99,6 +99,17 @@ function LawnPrograms() {
             </Box>
         </Box>
     );
+}
+
+const style = {
+    cardContainer: {
+        display: 'flex',
+        flexDirection: {
+            xs: 'column',
+            md: 'row'
+        },
+        width: '100%'
+    }
 }
 
 export default LawnPrograms;
