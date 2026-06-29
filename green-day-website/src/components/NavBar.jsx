@@ -19,8 +19,8 @@ export default function NavBar() {
 
     return (
         <AppBar position="static" sx={{ backgroundColor: "#06402B" }}>
-            <Toolbar sx={{ px: { xs: 1.5, sm: 2.5 } }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+            <Toolbar sx={{ px: { xs: 1.5, sm: 2.5 }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, width: { xs: '100%', sm: 'auto' } }}>
                     <Box
                         component="img"
                         src={logo}
