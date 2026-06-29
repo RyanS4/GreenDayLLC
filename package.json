@@ -1,7 +1,0 @@
-{
-  "name": "greendayllc-workspace",
-  "private": true,
-  "workspaces": [
-    "green-day-website"
-  ]
-}
